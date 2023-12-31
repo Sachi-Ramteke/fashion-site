@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.orders-div{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+}
+
+.order-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5px 10px;
+  height: 75vh;
+  gap: 0.8rem;
+  
+}

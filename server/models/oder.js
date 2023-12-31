@@ -1,0 +1,23 @@
+import { Schema, model } from "mongoose";
+
+const orderSchema = new Schema({
+  product: {
+    type: Schema.Types.ObjectId,
+    ref: "OuterWear",
+  },
+  user: {
+    type: Schema.Types.ObjectId,
+    ref: "User",
+  },
+  quantity: {
+    type: Number,
+    default: 1,
+  },
+  shippingaddress: {
+    type: String,
+    required: true,
+  },
+});
+
+const Order = model("Order", orderSchema);
+export default Order;

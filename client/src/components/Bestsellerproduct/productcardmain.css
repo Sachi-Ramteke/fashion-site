@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.productt-card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 0.6rem 0.4rem;
+  box-shadow: 1px 1px 5px 2px #e1e1e1;
+  margin-bottom: 1.3rem;
+
+}
+
+.product-imgg {
+  width: 100%;
+}
+
+.productt-info p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: rgba(0, 0, 0, 0.768);
+}
+
+.productt-card:hover {
+  box-shadow: 1px 1px 5px 2px #b9b9b9;
+  cursor: pointer;
+}

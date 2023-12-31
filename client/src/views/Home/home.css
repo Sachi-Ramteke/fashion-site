@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.home-div{
+  position: relative;
+}
+.img-div-one {
+  display: flex;
+  justify-content: center;
+}
+
+.img-main-div {
+  height: 97vh;
+  width: 50%;
+}
+
+.bg-img-div {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.bg-men {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.237)),
+    url(./img/bg1.jpg);
+}
+.bg-women {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.237)),
+    url(./img/bg2.jpg);
+}
+.bg-owear {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.237)),
+    url(./img/outerwear-bg.webp);
+}
+.bg-accessr {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.237)),
+    url(./img/accessories.webp);
+}
+
+.bg-img-div img {
+  height: 100%;
+  width: 100%;
+}
+
+.bg-img-text {
+  position: absolute;
+  color: #fff;
+  text-transform: uppercase;
+  top: 40%;
+  left: 28%;
+  font-size: 2.3rem;
+}
+.bg-men:hover {
+  animation: zoom-in 2s linear infinite;
+}
+
+.bg-women:hover {
+  animation: zoom-in 2s linear infinite;
+}
+.bg-owear:hover {
+  animation: zoom-in 2s linear infinite;
+}
+.bg-accessr:hover {
+  animation: zoom-in 2s linear infinite;
+}
+@keyframes zoom-in {
+  100% {
+    background-size: 105% 105%;
+    background-position: center;
+  }
+}
+/* home section ends here */
+
+/* bestseller section */
+.bestseller-div {
+  margin-block: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.bestseller-div h2 {
+  text-align: center;
+}
+
+.bestproduct-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.home-btn-div {
+  margin-bottom: 2.5rem;
+  margin-top: 0;
+}
+.view-btn-link {
+  text-decoration: none;
+}
+
+.view-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10rem;
+  font-size: 0.9rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  position: relative;
+  perspective: 40rem;
+}
+
+.view-btn::before {
+  position: absolute;
+  content: attr(data-front);
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  padding: 1rem 2rem;
+  color: #fff;
+  transition: 0.5s all ease;
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+
+.view-btn::after {
+  position: absolute;
+  content: attr(data-back);
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #efefef;
+  color: #030303;
+  border: 2px solid black;
+  padding: 1rem 2rem;
+  transition: 0.5s all ease;
+  opacity: 0;
+  transform: translateY(-50%) rotateX(90deg);
+}
+.view-btn:hover::before {
+  opacity: 0;
+  transform: translateY(50%) rotateX(-90deg);
+}
+.view-btn:hover::after {
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+/* bestseller section ends here */

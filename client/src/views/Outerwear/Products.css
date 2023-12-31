@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.owear-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.2rem;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.header h3 {
+  background-color: #000;
+  color: rgb(255, 255, 255);
+  padding-block: 1rem;
+  text-align: center;
+  border-top: 2px solid #fff;
+  margin-bottom: 1rem;
+}
