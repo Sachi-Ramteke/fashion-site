@@ -27,7 +27,7 @@ function Myorders() {
       <Navbar openSidebar={toggleSidebar} closeSidebar={toggleSidebar} />
       <Sidebar sidebar={sidebar} />
       <div className="header">
-        <h3>My Orders</h3>
+        <h3 style={{ marginBottom: ".3rem" }}>My Orders</h3>
       </div>
       <div className="orders-div">
         {orders?.map((order, index) => {
@@ -43,7 +43,7 @@ function Myorders() {
                 <h2>{product.name}</h2>
                 <p className="more-info">description :</p>
                 <p style={{ fontSize: "1.2rem" }}>{product.description}</p>
-                <p className="more-info">price :  ₹ {product.price}</p>
+                <p className="more-info">price : ₹ {product.price}</p>
 
                 <div className="quantity-container">
                   <span style={{ fontSize: "1.2rem", marginRight: "0.1rem" }}>
@@ -52,17 +52,20 @@ function Myorders() {
                   <span className="quantity-text">{quantity}</span>
                 </div>
 
-                <h3 style={{marginBlock:'.5rem'}}>
+                <h3 style={{ marginBlock: ".5rem" }}>
                   ₹ {product.price} x {quantity} = ₹ {product.price * quantity}
                 </h3>
                 <p>shipping address :</p>
-                <p style={
-                  {fontSize:"1.3rem",
-                   marginBlock:'.2rem', 
-                   paddingBottom:'.1rem',
-                  borderBottom: '2px solid black'
-                  }
-                  }>{shippingaddress}</p>
+                <p
+                  style={{
+                    fontSize: "1.3rem",
+                    marginBlock: ".2rem",
+                    paddingBottom: ".1rem",
+                    borderBottom: "2px solid black",
+                  }}
+                >
+                  {shippingaddress}
+                </p>
               </div>
             </div>
           );

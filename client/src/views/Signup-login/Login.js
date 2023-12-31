@@ -15,7 +15,7 @@ export default function Login() {
     if (response.data.success) {
       localStorage.setItem("user", JSON.stringify(response.data.data));
       alert(response.data.message);
-      window.location.href = "/wishlist";
+      window.location.href = "/products";
     } 
     else if (!response.data.success) {
       alert('signup first');

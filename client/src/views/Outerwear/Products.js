@@ -6,6 +6,7 @@ import OProductCard from "../../components/Bestsellerproduct/oproductcard";
 import axios from "axios";
 import "./Products.css";
 import Footer from "../../components/Footer/Footer";
+import { checkLogin } from "../../utils/auth";
 
 function Products() {
   const [sidebar, setSidebar] = useState(false);
@@ -21,6 +22,7 @@ function Products() {
 
   useEffect(() => {
     loadProducts();
+    checkLogin();
   }, []);
 
   return (

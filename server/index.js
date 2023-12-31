@@ -165,21 +165,12 @@ app.post("/signup", async (req, res) => {
 });
 
 app.get("/userinfo", async (req, res) => {
-  const { id } = req.useparams;
+  const { id } = req.params;
   const userInfo = await User.findOne({ user: id });
   res.json({
     success: true,
     data: userInfo,
     message: "User displayed",
-  });
-});
-
-app.delete("/userinfo/:id", async (req, res) => {
-  const { id } = req.params;
-  await Product.deleteOne({ _id: id });
-  res.json({
-    success: true,
-    message: "Product deleted successfully",
   });
 });
 

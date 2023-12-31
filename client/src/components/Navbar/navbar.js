@@ -16,9 +16,9 @@ function Navbar({ openSidebar }) {
           <Link to="/userinfo" className="nav-info-links">
             <i className="fa-solid fa-user"></i>
           </Link>
-          <Link to="/wishlist" className="nav-info-links">
+          {/* <Link to="/wishlist" className="nav-info-links">
             <i className="fa-solid fa-heart"></i>
-          </Link>
+          </Link> */}
           <Link to="/myorders" className="nav-info-links">
             <i className="fa-solid fa-cart-shopping"></i>
           </Link>

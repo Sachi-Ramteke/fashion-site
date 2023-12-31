@@ -15,19 +15,19 @@ function Sidebar({ sidebar }) {
         <Link to="/login" className="side-links">
           <p>Login</p>
         </Link>
-        <Link to="/wishlist" className="side-links">
+        {/* <Link to="/wishlist" className="side-links">
           <p>wishlist</p>
-        </Link>
-        <Link to="/menswear" className="side-links">
+        </Link> */}
+        <Link to="/products" className="side-links">
           <p>menswear</p>
         </Link>
-        <Link to="/womenswear" className="side-links">
+        <Link to="/products" className="side-links">
           <p>womenswear</p>
         </Link>
-        <Link to="/outerwear" className="side-links">
+        <Link to="/products" className="side-links">
           <p>outerwear</p>
         </Link>
-        <Link to="/accessories" className="side-links">
+        <Link to="/products" className="side-links">
           <p>accessories</p>
         </Link>
         <Link to="/myorders" className="side-links">
