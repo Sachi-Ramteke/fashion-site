@@ -15,7 +15,7 @@ function Products() {
 
   const [owear, setOwear] = useState([]);
   const loadProducts = async () => {
-    const response = await axios.get("/outerwear");
+    const response = await axios.get("/products");
     setOwear(response?.data?.data);
   };
 

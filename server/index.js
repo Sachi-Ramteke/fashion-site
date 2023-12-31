@@ -2,10 +2,10 @@ import dotenv from "dotenv";
 import express from "express";
 import mongoose from "mongoose";
 import User from "./models/user.js";
-import BestSeller from "./models/bestseller.js";
-import BestSellerW from "./models/bestsellerw.js";
+import BestSellerm from "./models/bestseller.js";
+import BestSellerWm from "./models/bestsellerw.js";
 import Order from "./models/oder.js"
-import Product from "./models/mensproduct.js";
+import Product from "./models/product.js";
 
 dotenv.config();
 
@@ -22,10 +22,10 @@ const connectMongoDB = async () => {
 
 connectMongoDB();
 
-app.post("/bestsellers", async (req, res) => {
+app.post("/bestsellerm", async (req, res) => {
   const { name, description, price, image, category } = req.body;
 
-  const bestsellerproducts = new BestSeller({
+  const bestsellerproducts = new BestSellerm({
     name: name,
     price: price,
     description: description,
@@ -48,8 +48,8 @@ app.post("/bestsellers", async (req, res) => {
   }
 });
 
-app.get("/bestsellers", async (req, res) => {
-  const bestsellerproducts = await BestSeller.find();
+app.get("/bestsellerm", async (req, res) => {
+  const bestsellerproducts = await BestSellerm.find();
 
   res.json({
     success: true,
@@ -58,10 +58,10 @@ app.get("/bestsellers", async (req, res) => {
   });
 });
 
-app.post("/bestsellersw", async (req, res) => {
+app.post("/bestsellerwm", async (req, res) => {
   const { name, description, price, image, category } = req.body;
 
-  const bestsellerproducts = new BestSellerW({
+  const bestsellerproducts = new BestSellerWm({
     name: name,
     price: price,
     description: description,
@@ -84,8 +84,8 @@ app.post("/bestsellersw", async (req, res) => {
   }
 });
 
-app.get("/bestsellersw", async (req, res) => {
-  const bestsellerproducts = await BestSellerW.find();
+app.get("/bestsellerwm", async (req, res) => {
+  const bestsellerproducts = await BestSellerWm.find();
 
   res.json({
     success: true,

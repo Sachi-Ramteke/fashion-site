@@ -23,5 +23,5 @@ const productSchema = new Schema({
   },
 });
 
-const BestSellerW = model("BestSellerW", productSchema);
-export default BestSellerW;
+const BestSellerWm = model("BestSellerWm", productSchema);
+export default BestSellerWm;

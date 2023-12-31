@@ -23,18 +23,8 @@ function Buy() {
     if (!id) {
       window.location.href = "/";
     }
-    const response = await axios.get(`/outerwear/${id}`);
-    // setProduct(response.data.data);
-
-    const response1 = await axios.get(`/accessories/${id}`);
-    // setProduct(response1.data.data);
-    if (id) {
-      if (response) {
-        setProduct(response.data.data);
-      } else if (response1) {
-        setProduct(response1.data.data);
-      }
-    }
+    const response = await axios.get(`/products/${id}`);
+    setProduct(response.data.data);
   };
 
   const increaseQty = () => {

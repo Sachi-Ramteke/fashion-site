@@ -13,12 +13,12 @@ function Home() {
   const [wproducts, setWproducts] = useState([]);
 
   const loadProducts = async () => {
-    const response = await axios.get("/bestsellers");
+    const response = await axios.get("/bestsellerm");
     setProducts(response?.data?.data);
   };
 
   const loadProductsW = async () => {
-    const response = await axios.get("/bestsellersw");
+    const response = await axios.get("/bestsellerwm");
     setWproducts(response?.data?.data);
   };
 
