@@ -7,6 +7,9 @@ import BestSellerWm from "./models/bestsellerw.js";
 import Order from "./models/oder.js"
 import Product from "./models/product.js";
 
+import path from 'path';
+const __dirname = path.resolve();
+
 dotenv.config();
 
 const app = express();
@@ -228,6 +231,14 @@ app.get("/myorders", async (req, res) => {
     message: "orders retrieved",
   });
 });
+
+if(process.env.NODE_ENV === "production"){
+  app.use(express.static(path.join(__dirname, '..', 'client', 'build')));
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'client', 'build', 'index.html'))
+  });
+}
 
 const PORT = 5000;
 app.listen(PORT, () => {
