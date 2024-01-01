@@ -32,8 +32,8 @@ function Products() {
 
   return (
     <>
-      <Navbar openSidebar={toggleSidebar} closeSidebar={toggleSidebar} />
       <div className="outerwear-div">
+        <Navbar openSidebar={toggleSidebar} closeSidebar={toggleSidebar} />
         <Sidebar sidebar={sidebar} />
         <div className="header">
           <h3>outerwear by ↁ&Ġ</h3>

@@ -15,6 +15,7 @@
 
 .signup-title {
   text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 .input-label {
@@ -42,23 +43,6 @@
   margin-right: auto;
   width: 90%;
 }
-/* 
-.signup-btn {
-  background-color: #000;
-  color: #fff;
-  font-size: 1.4rem;
-  padding: 0.4rem 1.6rem;
-  display: block;
-  margin: 0.6rem auto;
-  cursor: pointer;
-  outline: none;
-  border: none;
-}
-
-.signup-btn:hover {
-  transform: scale(0.98);
-  transition-duration: 0.6s;
-} */
 
 .signup-btn {
   display: block;
@@ -112,4 +96,15 @@
 .signup-btn:hover::after {
   opacity: 1;
   transform: translateY(0) rotateX(0);
+}
+
+.login-link {
+  margin-top: 3.5rem;
+  color: #000;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+}
+.login-link:hover{
+  text-decoration: underline;
 }

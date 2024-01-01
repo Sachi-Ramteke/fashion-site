@@ -19,3 +19,29 @@
   border-top: 2px solid #fff;
   margin-bottom: 1rem;
 }
+
+.outerwear-div {
+  position: relative;
+}
+
+.logout-btn {
+  position: absolute;
+  top: 0.3%;
+  right: 10%;
+  background-color: #000000;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding-inline: 0.4rem;
+  padding-block: 0.6rem;
+  width: 15%;
+  z-index: 1000;
+  border:#000000;
+  /* border-bottom: 1px solid #fff; */
+  cursor: pointer;
+  transition: border 0.8s ease-in-out;
+}
+
+.logout-btn:hover {
+border: 1px solid #fff;
+}

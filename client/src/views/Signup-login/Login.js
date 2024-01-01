@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./signup-login.css";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -62,6 +63,9 @@ export default function Login() {
           className="signup-btn"
           onClick={login}
         ></button>
+         <Link to="/signup" className="login-link">
+          don't have an account? signup here
+        </Link>
       </div>
     </>
   );

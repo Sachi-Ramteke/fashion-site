@@ -39,9 +39,6 @@ function Footer() {
       <div className="footer-div">
         <div className="footer-content">
           <h2>ↁ&Ġ</h2>
-          <Link to="/reviews" className="footer-links">
-            customer reviews
-          </Link>
           <Link to="/about" className="footer-links">
             about us
           </Link>
@@ -53,6 +50,9 @@ function Footer() {
           </Link>
           <Link to="refund" className="footer-links">
             refund policy
+          </Link>
+          <Link to="/" className="footer-links">
+            Store
           </Link>
         </div>
 
@@ -87,7 +87,10 @@ function Footer() {
           </form>
           <ToastContainer />
         </div>
-        <h3> &copy; 2023-2024 | ↁ&Ġ <span>by Sachi</span> </h3>
+        <h3>
+          {" "}
+          &copy; 2023-2024 | ↁ&Ġ <span>by Sachi</span>{" "}
+        </h3>
       </div>
     </>
   );
