@@ -20,6 +20,11 @@ function Products() {
     setOwear(response?.data?.data);
   };
 
+  const logout = async () => {
+    localStorage.removeItem("user");
+    window.location.href = "/";
+  };
+
   useEffect(() => {
     loadProducts();
     checkLogin();
@@ -52,6 +57,9 @@ function Products() {
             );
           })}
         </div>
+        <button className="logout-btn" onClick={logout}>
+          logout
+        </button>
       </div>
       <Footer />
     </>

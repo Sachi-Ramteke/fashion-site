@@ -13,12 +13,7 @@ function Navbar({ openSidebar }) {
         </div>
 
         <div className="nav-info-div">
-          <Link to="/userinfo" className="nav-info-links">
-            <i className="fa-solid fa-user"></i>
-          </Link>
-          {/* <Link to="/wishlist" className="nav-info-links">
-            <i className="fa-solid fa-heart"></i>
-          </Link> */}
+          
           <Link to="/myorders" className="nav-info-links">
             <i className="fa-solid fa-cart-shopping"></i>
           </Link>

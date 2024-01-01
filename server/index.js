@@ -4,10 +4,10 @@ import mongoose from "mongoose";
 import User from "./models/user.js";
 import BestSellerm from "./models/bestseller.js";
 import BestSellerWm from "./models/bestsellerw.js";
-import Order from "./models/oder.js"
+import Order from "./models/oder.js";
 import Product from "./models/product.js";
 
-import path from 'path';
+import path from "path";
 const __dirname = path.resolve();
 
 dotenv.config();
@@ -167,16 +167,6 @@ app.post("/signup", async (req, res) => {
   }
 });
 
-app.get("/userinfo", async (req, res) => {
-  const { id } = req.params;
-  const userInfo = await User.findOne({ user: id });
-  res.json({
-    success: true,
-    data: userInfo,
-    message: "User displayed",
-  });
-});
-
 app.post("/login", async (req, res) => {
   const { email, password } = req.body;
   const loggedinUser = await User.findOne({ email: email, password: password });
@@ -199,7 +189,6 @@ app.post("/order", async (req, res) => {
 
   const placedOrder = new Order({
     product: product,
-    product1:product,
     user: user,
     quantity: quantity,
     shippingaddress: shippingaddress,
@@ -232,11 +221,11 @@ app.get("/myorders", async (req, res) => {
   });
 });
 
-if(process.env.NODE_ENV === "production"){
-  app.use(express.static(path.join(__dirname, '..', 'client', 'build')));
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "..", "client", "build")));
 
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'client', 'build', 'index.html'))
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "..", "client", "build", "index.html"));
   });
 }
 
