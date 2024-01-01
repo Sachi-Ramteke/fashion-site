@@ -36,7 +36,7 @@ function Products() {
         <Navbar openSidebar={toggleSidebar} closeSidebar={toggleSidebar} />
         <Sidebar sidebar={sidebar} />
         <div className="header">
-          <h3>outerwear by ↁ&Ġ</h3>
+          <h3>fashion wear by ↁ&Ġ</h3>
         </div>
         <div className="owear-div">
           {owear?.map((outerwear, index) => {

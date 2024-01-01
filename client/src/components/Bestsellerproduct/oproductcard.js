@@ -17,7 +17,9 @@ function OProductCard({ id, name, description, price, image, category }) {
         <Link className="buyy-btn cardd-btn" to={`/buy/${id}`}>
           <span>Buy Now</span>
         </Link>
-        <button className="wishlistt-btn cardd-btn">Add to Wishlist</button>
+        <Link to='/myorders'>
+        <button className="wishlistt-btn cardd-btn">my orders</button>
+        </Link>
       </div>
     </div>
   );
