@@ -4,7 +4,7 @@ import "./bproductcard.css";
 function ProductCard({ id, name, description, price, image, category }) {
   return (
     <div className="product-card">
-      <Link to="/menswear" className="img-link-prdcard">
+      <Link to="/products" className="img-link-prdcard">
         <img src={image} alt={name} className="product-img" />
       </Link>
 
