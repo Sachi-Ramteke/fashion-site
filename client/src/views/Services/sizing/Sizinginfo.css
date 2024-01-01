@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sizing-div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  width: 85vw;
+}
+
+.sizing-div h3 {
+  word-spacing: 2px;
+  line-height: 1.6rem;
+
+ }
+
+.sizing-div .size-img{
+    height: 20vw;
+    width: 95%;
+}
+
+.size-img2{
+    width: 55%;
+}
+
+.size-img3{
+    width: 55%;
+}
+
+.margin-top{
+    margin-top: 2rem;
+}
