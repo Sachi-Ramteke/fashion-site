@@ -42,13 +42,13 @@ function Footer() {
           <Link to="/about" className="footer-links">
             about us
           </Link>
-          <Link to="sizinginfo" className="footer-links">
+          <Link to="/sizinginfo" className="footer-links">
             sizing info
           </Link>
-          <Link to="shipping" className="footer-links">
+          <Link to="/shipping" className="footer-links">
             shipping policy
           </Link>
-          <Link to="refund" className="footer-links">
+          <Link to="/refund" className="footer-links">
             refund policy
           </Link>
           <Link to="/" className="footer-links">

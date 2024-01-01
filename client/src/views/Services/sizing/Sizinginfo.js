@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "../../components/Navbar/navbar";
-import Sidebar from "../../components/Sidebar/Sidebar";
+import Navbar from "../../../components/Navbar/navbar";
+import Sidebar from "../../../components/Sidebar/Sidebar";
 import { useState } from 'react';
 
-function Refund() {
+function Sizinginfo() {
   const [sidebar, setSidebar] = useState(false);
   const toggleSidebar = () => {
     setSidebar((prevState) => !prevState);
@@ -18,4 +18,4 @@ function Refund() {
   );
 }
 
-export default Refund;
+export default Sizinginfo;

@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.about-div {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 70vw;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.about-div p{
+    text-align: center;
+    word-spacing: 2px;
+}

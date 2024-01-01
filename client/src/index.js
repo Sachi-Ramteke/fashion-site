@@ -6,10 +6,10 @@ import Home from "../src/views/Home/home";
 import Myorders from "../src/views/MyOrders/Myorders";
 import Login from "../src/views/Signup-login/Login";
 import Signup from "../src/views/Signup-login/Signup";
-import About from "../src/views/Services/About";
-import Refund from "../src/views/Services/Refund";
-import Shipping from "../src/views/Services/Shipping";
-import Sizinginfo from "../src/views/Services/Sizinginfo";
+import About from "../src/views/Services/about/About";
+import Refund from "../src/views/Services/refund/Refund";
+import Shipping from "../src/views/Services/shipping/Shipping";
+import Sizinginfo from "../src/views/Services/sizing/Sizinginfo";
 import Buy from "../src/views/Buy/Buy";
 import Products from "./views/Outerwear/Products";
 

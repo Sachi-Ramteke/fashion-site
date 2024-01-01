@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.refund-div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  width: 55vw;
+}
+
+.refund-div p {
+  word-spacing: 2px;
+}
