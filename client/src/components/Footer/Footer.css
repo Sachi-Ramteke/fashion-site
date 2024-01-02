@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .footer-div {
@@ -17,16 +17,16 @@
   gap: 0.3rem;
 }
 
-.footer-div h3{
-    color: #fffffff7;
-    margin-bottom: 0;
-    padding-top: 3rem;
-    font-weight: 500;
+.footer-div h3 {
+  color: #fffffff7;
+  margin-bottom: 0;
+  padding-top: 3rem;
+  font-weight: 500;
 }
 
-.footer-div span{
-    text-transform: lowercase;
-    font-weight: 500;
+.footer-div span {
+  text-transform: lowercase;
+  font-weight: 500;
 }
 
 .footer-content {
@@ -93,4 +93,26 @@
   color: #fff;
   border: 1.4px solid #fff;
   transition: all 0.4s ease-out;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-div {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1.7rem;
+    align-items: center;
+    position: relative;
+  }
+  .footer-contact {
+    width: 92%;
+    padding-left: 2rem;
+  }
+  .footer-content {
+    width: 90%;
+    padding-left: 2rem;
+  }
+  .footer-div h3{
+    position: absolute;
+    bottom: 3%;
+  }
 }

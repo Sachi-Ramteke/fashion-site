@@ -35,9 +35,8 @@ function Home() {
   return (
     <>
       <Navbar openSidebar={toggleSidebar} closeSidebar={toggleSidebar} />
+      <Sidebar sidebar={sidebar} />
       <div className="home-div">
-        <Sidebar sidebar={sidebar} />
-
         <div className="img-div-one">
           <div className="img-main-div">
             <Link to="/products">

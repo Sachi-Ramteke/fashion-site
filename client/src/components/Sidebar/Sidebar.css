@@ -55,3 +55,25 @@
   width: 100%;
   overflow: hidden;
 }
+
+/* responsiveness */
+@media screen and (max-width: 600px) {
+  .sidebar {
+    transform: translateX(-200%);
+    width: 55%;
+    gap: 0.4rem;
+  }
+
+  .sidebar-open {
+    transform: translateX(0%);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 15%;
+  }
+
+  .sidebar > * {
+    padding-block: 0.4rem;
+    padding-left: 0.8rem;
+  }
+}

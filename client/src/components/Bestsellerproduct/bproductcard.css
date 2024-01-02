@@ -27,3 +27,10 @@
   box-shadow: 1px 1px 5px 2px #b8b8b8cb;
   cursor: pointer;
 }
+
+@media screen and (max-width:600px) {
+  .product-card{
+    width: 80vw;
+  }
+  
+}
