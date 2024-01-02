@@ -36,12 +36,21 @@
   padding-block: 0.6rem;
   width: 15%;
   z-index: 1000;
-  border:#000000;
-  /* border-bottom: 1px solid #fff; */
+  border: #000000;
   cursor: pointer;
   transition: border 0.8s ease-in-out;
 }
 
 .logout-btn:hover {
-border: 1px solid #fff;
+  border: 1px solid #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .logout-btn {
+    position: fixed;
+    top: 2%;
+    right: 32%;
+    background-color: transparent;
+    font-size: 1.2rem;
+  }
 }
