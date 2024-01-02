@@ -4,6 +4,7 @@ import Sidebar from "../../components/Sidebar/Sidebar";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./Myorders.css";
+import { checkLogin } from "../../utils/auth";
 
 function Myorders() {
   const [sidebar, setSidebar] = useState(false);
@@ -20,6 +21,7 @@ function Myorders() {
 
   useEffect(() => {
     fetchOrders();
+    checkLogin();
   }, []);
 
   return (
