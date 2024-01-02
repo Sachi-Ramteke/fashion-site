@@ -15,22 +15,42 @@
 .sizing-div h3 {
   word-spacing: 2px;
   line-height: 1.6rem;
-
- }
-
-.sizing-div .size-img{
-    height: 20vw;
-    width: 95%;
 }
 
-.size-img2{
-    width: 55%;
+.sizing-div .size-img {
+  height: 20vw;
+  width: 95%;
 }
 
-.size-img3{
-    width: 55%;
+.size-img2 {
+  width: 55%;
 }
 
-.margin-top{
-    margin-top: 2rem;
+.size-img3 {
+  width: 55%;
+}
+
+.margin-top {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .sizing-div .size-img {
+    height: 25vw;
+    width: 100%;
+  }
+
+  .size-img2 {
+    width: 85%;
+  }
+
+  .size-img3 {
+    width: 85%;
+  }
+  .margin-top{
+    margin-top: .5rem;
+  }
+  .sizing-div{
+    margin-top: 1rem;
+  }
 }

@@ -27,7 +27,7 @@ function Sizinginfo() {
       >
         <div className="sizing-div">
           <h2 style={{ textShadow: "1px 1px 1px black", textAlign: "center" }}>
-            SHIPPING POLICY
+            Sizing Information
           </h2>
           <h3 className="margin-top">SIZING RECOMMENDATION DISTRIBUTION</h3>
           <img src={img1} alt="" className="size-img" />
