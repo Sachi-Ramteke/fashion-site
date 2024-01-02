@@ -105,6 +105,16 @@
   text-decoration: none;
   text-align: center;
 }
-.login-link:hover{
+.login-link:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .signup-div {
+    width: 90%;
+    margin-top: 0.1rem;
+  }
+  .signup-btn {
+    margin-top: 0.5rem;
+  }
 }
