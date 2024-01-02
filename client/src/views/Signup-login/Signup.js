@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./signup-login.css";
 import { Link } from "react-router-dom";
+import Navbar from "../../components/Navbar/navbar";
+import Sidebar from "../../components/Sidebar/Sidebar";
 
 function Signup() {
   const [name, setName] = useState("");
   const [mobile, setMobile] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  
+
   const signup = async () => {
     const response = await axios.post("/signup", {
       name: name,
@@ -23,8 +25,15 @@ function Signup() {
     }
   };
 
+  const [sidebar, setSidebar] = useState(false);
+  const toggleSidebar = () => {
+    setSidebar((prevState) => !prevState);
+  };
+
   return (
     <>
+      <Navbar openSidebar={toggleSidebar} closeSidebar={toggleSidebar} />
+      <Sidebar sidebar={sidebar} />
       <div className="signup-div">
         <h2 className="signup-title">Create an account</h2>
 
@@ -92,7 +101,7 @@ function Signup() {
           onClick={signup}
         ></button>
         <Link to="/login" className="login-link">
-          already have an account? login here 
+          already have an account? login here
         </Link>
       </div>
     </>

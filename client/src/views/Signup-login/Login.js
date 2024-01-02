@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./signup-login.css";
 import { Link } from "react-router-dom";
+import Navbar from "../../components/Navbar/navbar";
+import Sidebar from "../../components/Sidebar/Sidebar";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -12,19 +14,26 @@ export default function Login() {
       email: email,
       password: password,
     });
-    
+
     if (response.data.success) {
       localStorage.setItem("user", JSON.stringify(response.data.data));
       alert(response.data.message);
       window.location.href = "/products";
-    } 
-    else if (!response.data.success) {
-      alert('signup first');
+    } else if (!response.data.success) {
+      alert("signup first");
       window.location.href = "/signup";
     }
   };
+
+  const [sidebar, setSidebar] = useState(false);
+  const toggleSidebar = () => {
+    setSidebar((prevState) => !prevState);
+  };
+
   return (
     <>
+      <Navbar openSidebar={toggleSidebar} closeSidebar={toggleSidebar} />
+      <Sidebar sidebar={sidebar} />
       <div className="signup-div">
         <h2 className="signup-title">Login</h2>
 
@@ -63,7 +72,7 @@ export default function Login() {
           className="signup-btn"
           onClick={login}
         ></button>
-         <Link to="/signup" className="login-link">
+        <Link to="/signup" className="login-link">
           don't have an account? signup here
         </Link>
       </div>
