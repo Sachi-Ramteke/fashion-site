@@ -60,7 +60,7 @@ function Buy() {
     <>
       <Navbar openSidebar={toggleSidebar} closeSidebar={toggleSidebar} />
       <Sidebar sidebar={sidebar} />
-      <div>
+      <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
         <div className="buy-container">
           <img
             src={product.image}

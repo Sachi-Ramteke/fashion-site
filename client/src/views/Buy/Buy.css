@@ -49,9 +49,9 @@
 
 .shipping-address {
   width: 98%;
-  margin-bottom: 20px;
-  font-size: 20px;
-  padding: 10px 20px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  padding: 0.6rem 0.3rem;
 }
 
 .order-btn {
@@ -75,4 +75,27 @@
 }
 
 @media screen and (max-width: 600px) {
+  .buy-container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 90vw;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  .buy-product-image {
+    width: 100%;
+  }
+  .buy-info-div {
+    width: 95%;
+    gap: 0.2rem;
+  }
+  .order-btn {
+    width: 100%;
+  }
+  .shipping-address {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
 }
