@@ -20,8 +20,8 @@ function Myorders() {
   };
 
   useEffect(() => {
-    fetchOrders();
     checkLogin();
+    fetchOrders();
   }, []);
 
   return (
